@@ -46,6 +46,8 @@ pesos = {
 df_pesos = pd.DataFrame( pesos
 )
 
+df_pesos['Total'] = df_pesos.apply(lambda x: x.sum(), axis=1 )
+
 with st.form('Pesoso'):
     st.subheader('Faça ajustes nos pesos')
        
