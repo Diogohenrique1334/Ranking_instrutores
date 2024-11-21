@@ -46,7 +46,6 @@ pesos = {
 df_pesos = pd.DataFrame( pesos
 )
 
-df_pesos['Total'] = df_pesos.apply(lambda x: x.sum(), axis=1 )
 
 with st.form('Pesoso'):
     st.subheader('Faça ajustes nos pesos')
@@ -70,6 +69,7 @@ with st.form('Pesoso'):
         df_pesos['horas em treinamento por dia'] = [horas_em_treinamento_por_dia]
         df_pesos['Horas por turma'] = [horas_por_turma]
         df_pesos['Horas em treinamento'] = [horas_em_treinamento]
+        df_pesos['Total'] = df_pesos.apply(lambda x: x.sum(), axis=1 )
         
         st.write('Pesos atualizados:')
         st.write(df_pesos)
