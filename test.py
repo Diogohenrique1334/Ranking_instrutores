@@ -33,14 +33,14 @@ for col in colunas[1:]:
     df_normalizado[col] = temp
 
 pesos = {
-    'Turmas':[0],
-    'Dias em treinamento':[0],
-    'Treinamentos por dia':[0],
-    'Treinados':[0],
-    'horas em treinamento por dia':[0],
-    'Horas por turma':[0],
-    'Horas em treinamento':[0],
-    'Moderação':[0]
+    'Turmas':[1],
+    'Dias em treinamento':[1.5],
+    'Treinamentos por dia':[1.5],
+    'Treinados':[1],
+    'horas em treinamento por dia':[2],
+    'Horas por turma':[1.5],
+    'Horas em treinamento':[1.5],
+    'Moderação':[1]
     }
     
 
@@ -51,14 +51,14 @@ df_pesos = pd.DataFrame( pesos
 with st.form('Pesoso'):
     st.subheader('Faça ajustes nos pesos')
        
-    turmas = st.number_input('Turmas',1.0,step=0.5)
-    dias_em_treinamento = st.number_input('Dias em treinamento',1.0,step=0.5)
-    treinamentos_por_dia = st.number_input ('Treinamentos por dia',1.0,step=0.5)
-    treinados = st.number_input ('Treinados',1.0,step=0.5)
-    horas_em_treinamento_por_dia = st.number_input ('horas em treinamento por dia',1.0,step=0.5)
-    horas_em_treinamento = st.number_input ('Horas em treinamento',1.0,step=0.5)
-    horas_por_turma = st.number_input ('Horas por turma',1.0,step=0.5)
-    moderacao = st.number_input ('Moderação',1.0,step=0.5)
+    turmas = st.number_input('Turmas',0.0,step=0.5)
+    dias_em_treinamento = st.number_input('Dias em treinamento',0.0,step=0.5)
+    treinamentos_por_dia = st.number_input ('Treinamentos por dia',0.0,step=0.5)
+    treinados = st.number_input ('Treinados',0.0,step=0.5)
+    horas_em_treinamento_por_dia = st.number_input ('horas em treinamento por dia',0.0,step=0.5)
+    horas_em_treinamento = st.number_input ('Horas em treinamento',0.0,step=0.5)
+    horas_por_turma = st.number_input ('Horas por turma',0.0,step=0.5)
+    moderacao = st.number_input ('Moderação',0.0,step=0.5)
 
     
         
