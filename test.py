@@ -33,14 +33,14 @@ for col in colunas[1:]:
     df_normalizado[col] = temp
 
 pesos = {
-    'Turmas':[1],
-    'Dias em treinamento':[1.5],
-    'Treinamentos por dia':[1.5],
-    'Treinados':[1],
-    'horas em treinamento por dia':[2],
-    'Horas por turma':[1.5],
-    'Horas em treinamento':[1.5],
-    'Moderação':[1]
+    'Turmas':[0],
+    'Dias em treinamento':[0],
+    'Treinamentos por dia':[0],
+    'Treinados':[0],
+    'horas em treinamento por dia':[0],
+    'Horas por turma':[0],
+    'Horas em treinamento':[0],
+    'Moderação':[0]
     }
     
 
